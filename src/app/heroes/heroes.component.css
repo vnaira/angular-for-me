@@ -1,0 +1,6 @@
+h4{ color: red}
+li.selected {
+  background-color: #CFD8DC;
+  color: white;
+}
+li:hover {cursor: pointer}

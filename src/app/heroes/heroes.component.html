@@ -1,0 +1,13 @@
+<div class="ui container">
+<ul>
+  <li *ngFor="let heroIt of heroes" >
+      <!--(click)="onSelect(heroIt)" [class.selected] = "heroIt === selectedHero"-->
+    <a routerLink="/detail/{{heroIt.id}}" class="badge">
+    <span class="small">{{heroIt.id}}</span> {{heroIt.name}}
+    </a>
+  </li>
+</ul>
+  <!--<app-heroe-detail [hero] = "selectedHero" ></app-heroe-detail>-->
+</div>
+<app-messages></app-messages>
+
